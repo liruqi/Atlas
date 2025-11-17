@@ -296,8 +296,13 @@ end
 --Comparator function for alphabetic sorting of maps
 --yey, one function for everything
 local function Atlas_SortZonesAlpha(a, b)
+    if AtlasMaps[a].PlayerLimit ~= AtlasMaps[b].PlayerLimit then
+        return tonumber(AtlasMaps[a].PlayerLimit or 0) < tonumber(AtlasMaps[b].PlayerLimit or 0);
+    end
+    
 	local aa = Atlas_SanitizeName(AtlasMaps[a].ZoneName[1]);
 	local bb = Atlas_SanitizeName(AtlasMaps[b].ZoneName[1]);
+    
 	return aa < bb;
 end
 
