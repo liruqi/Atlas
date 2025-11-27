@@ -10,4 +10,4 @@ Otherwise you may encounter errors.
 
 ## Preview
 
-![изображение](https://github.com/user-attachments/assets/f09675a6-9aeb-4156-9e44-825e0d41637f)
+<img width="1445" height="791" alt="image" src="https://github.com/user-attachments/assets/7d8738fb-d507-4360-bc68-32c96c6a5bd6" />
