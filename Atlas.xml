@@ -297,33 +297,7 @@
 				<Anchors>
 					<Anchor point="TOPLEFT" relativeTo="AtlasText_ZoneName" relativePoint="TOPLEFT">
 						<Offset>
-							<AbsDimension x="0" y="-30"/>
-						</Offset>
-					</Anchor>
-				</Anchors>
-				<Layers>
-					<Layer level="OVERLAY">
-						<FontString name="$parent_Text" inherits="GameFontNormal" justifyH="LEFT">
-							<Size>
-								<AbsDimension x="351" y="20"/>
-							</Size>
-						</FontString>
-					</Layer>
-				</Layers>
-				<Scripts>
-					<OnLeave>
-						GameTooltip:Hide();
-					</OnLeave>
-				</Scripts>
-			</Frame>
-			<Frame name="AtlasText_LevelRange">
-				<Size>
-					<AbsDimension x="351" y="20" />
-				</Size>
-				<Anchors>
-					<Anchor point="TOPLEFT" relativeTo="AtlasText_ZoneName" relativePoint="TOPLEFT">
-						<Offset>
-							<AbsDimension x="0" y="-50"/>
+							<AbsDimension x="0" y="-28"/>
 						</Offset>
 					</Anchor>
 				</Anchors>
@@ -349,7 +323,7 @@
 				<Anchors>
 					<Anchor point="TOPLEFT" relativeTo="AtlasText_ZoneName" relativePoint="TOPLEFT">
 						<Offset>
-							<AbsDimension x="0" y="-70"/>
+							<AbsDimension x="0" y="-46"/>
 						</Offset>
 					</Anchor>
 				</Anchors>
@@ -375,7 +349,7 @@
 				<Anchors>
 					<Anchor point="TOPLEFT" relativeTo="AtlasText_ZoneName" relativePoint="TOPLEFT">
 						<Offset>
-							<AbsDimension x="0" y="-90"/>
+							<AbsDimension x="0" y="-64"/>
 						</Offset>
 					</Anchor>
 				</Anchors>

@@ -512,17 +512,16 @@ function Atlas_Refresh()
 		local _RED = "|cffcc6666";
 		tName = tName .. _RED .. " [" .. base.Acronym .. "]";
 	end
+	if (base.LevelRange) then
+		tName = tName .. " (" .. base.LevelRange .. ")";
+	end
 	AtlasText_ZoneName_Text:SetText(tName);
 
 	local tLoc = "";
-	local tLR = "";
 	local tML = "";
 	local tPL = "";
 	if (base.Location[1]) then
 		tLoc = ATLAS_STRING_LOCATION .. ": " .. base.Location[1];
-	end
-	if (base.LevelRange) then
-		tLR = ATLAS_STRING_LEVELRANGE .. ": " .. base.LevelRange;
 	end
 	if (base.MinLevel) then
 		tML = ATLAS_STRING_MINLEVEL .. ": " .. base.MinLevel;
@@ -531,7 +530,6 @@ function Atlas_Refresh()
 		tPL = ATLAS_STRING_PLAYERLIMIT .. ": " .. base.PlayerLimit;
 	end
 	AtlasText_Location_Text:SetText(tLoc);
-	AtlasText_LevelRange_Text:SetText(tLR);
 	AtlasText_MinLevel_Text:SetText(tML);
 	AtlasText_PlayerLimit_Text:SetText(tPL);
 
