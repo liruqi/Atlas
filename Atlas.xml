@@ -25,13 +25,13 @@
 ..\FrameXML\UI.xsd">
 	<Button name="AtlasEntryTemplate" hidden="true" virtual="true">
 		<Size>
-			<AbsDimension x="330" y="20" />
+			<AbsDimension x="330" y="18" />
 		</Size>
 		<Layers>
 			<Layer level="OVERLAY">
-				<FontString name="$parent_Text" inherits="GameFontHighlight" wraponspaces="false" justifyH="LEFT">
+				<FontString name="$parent_Text" inherits="GameFontHighlight" justifyH="LEFT">
 					<Size>
-						<AbsDimension x="330" y="20" />
+						<AbsDimension x="310" y="20" />
 					</Size>
 				</FontString>
 			</Layer>
