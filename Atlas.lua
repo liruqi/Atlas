@@ -512,14 +512,14 @@ function Atlas_Refresh()
 		local _RED = "|cffcc6666";
 		tName = tName .. _RED .. " [" .. base.Acronym .. "]";
 	end
-	if (base.LevelRange) then
-		tName = tName .. " (" .. base.LevelRange .. ")";
-	end
 	AtlasText_ZoneName_Text:SetText(tName);
-
+	local tLR = "";
 	local tLoc = "";
 	local tML = "";
 	local tPL = "";
+	if (base.LevelRange) then -- Add LevelRange check and formatting
+		tLR = "(" .. base.LevelRange .. ")";
+	end
 	if (base.Location[1]) then
 		tLoc = ATLAS_STRING_LOCATION .. ": " .. base.Location[1];
 	end
@@ -529,6 +529,7 @@ function Atlas_Refresh()
 	if (base.PlayerLimit) then
 		tPL = ATLAS_STRING_PLAYERLIMIT .. ": " .. base.PlayerLimit;
 	end
+	AtlasText_LevelRange_Text:SetText(tLR);
 	AtlasText_Location_Text:SetText(tLoc);
 	AtlasText_MinLevel_Text:SetText(tML);
 	AtlasText_PlayerLimit_Text:SetText(tPL);
@@ -854,7 +855,7 @@ end
 function AtlasScrollBar_Update()
 	GameTooltip:Hide();
 	local line, lineplusoffset;
-	FauxScrollFrame_Update(AtlasScrollBar, ATLAS_CUR_LINES, ATLAS_NUM_LINES, 15);
+	FauxScrollFrame_Update(AtlasScrollBar, ATLAS_CUR_LINES, ATLAS_NUM_LINES, 20);
 	for line = 1, ATLAS_NUM_LINES do
 		lineplusoffset = line + FauxScrollFrame_GetOffset(AtlasScrollBar);
 		if (lineplusoffset <= ATLAS_CUR_LINES) then

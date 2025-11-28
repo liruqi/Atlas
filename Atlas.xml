@@ -316,6 +316,29 @@
 					</OnLeave>
 				</Scripts>
 			</Frame>
+			<Frame name="AtlasText_LevelRange">
+				<Size>
+					<AbsDimension x="351" y="30" />
+				</Size>
+				<Anchors>
+					<Anchor point="TOPRIGHT" relativeTo="AtlasText_ZoneName" relativePoint="TOPRIGHT">
+					</Anchor>
+				</Anchors>
+				<Layers>
+					<Layer level="OVERLAY">
+						<FontString name="$parent_Text" inherits="GameFontNormal" justifyH="RIGHT">
+							<Size>
+								<AbsDimension x="351" y="30"/>
+							</Size>
+						</FontString>
+					</Layer>
+				</Layers>
+				<Scripts>
+					<OnLeave>
+						GameTooltip:Hide();
+					</OnLeave>
+				</Scripts>
+			</Frame>
 			<Frame name="AtlasText_MinLevel">
 				<Size>
 					<AbsDimension x="351" y="20" />
