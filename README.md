@@ -9,5 +9,4 @@ If you want to use AtlasLoot and/or AtlasQuest with this fork of Atlas, download
 Otherwise you may encounter errors.
 
 ## Preview
-
-<img width="1445" height="791" alt="image" src="https://github.com/user-attachments/assets/7d8738fb-d507-4360-bc68-32c96c6a5bd6" />
+<img width="1450" height="771" alt="image" src="https://github.com/user-attachments/assets/b40c399d-5b48-440e-aeea-21e191e6aa08" />
